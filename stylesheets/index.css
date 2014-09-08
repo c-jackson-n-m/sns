@@ -1,68 +1,112 @@
-header.container-fluid {
+/************************************\
+          ***load fonts***
+\************************************/
+@font-face {
+	font-family: 'ralewayregular';
+	src: url('../fonts/raleway_regular-webfont.eot');
+	src: url('../fonts/raleway_regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/raleway_regular-webfont.woff') format('woff'),
+	     url('../fonts/raleway_regular-webfont.ttf') format('truetype'),
+	     url('../fonts/raleway_regular-webfont.svg#ralewayregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poiretoneregular';
+	src: url('../fonts/poiretone-webfont.eot');
+	src: url('../fonts/poiretone-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/poiretone-webfont.woff') format('woff'),
+	     url('../fonts/poiretone-webfont.ttf') format('truetype'),
+	     url('../fonts/poiretone-webfont.svg#poiret_oneregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/************************************\
+            ***body***
+\************************************/
+body{
+	font-family: ralewayregular;
+  padding: 0;
+  margin: 0;
+}
+
+/***********************************\
+            ***header***
+\***********************************/
+header{
+  background: url("../images/assss.jpg") no-repeat scroll top center/cover #e6e9ed;
   margin: 0;
   padding: 0;
 }
+header .header-wrapper{
+  background-color: rgba(103, 65, 114,0.6);
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  **the menubar**
+*/
 .navbar{
   background-color: transparent;
-  margin-top: 20px;
+  padding: 0.3em;
 }
-header.container-fluid .landing_plane {
-  background: url("../images/as.jpg") no-repeat scroll top center/cover #e6e9ed;
- 
-  width: 100%;
-  min-height: 70rem;
+.navbar-nav li{
+	border: 1px solid transparent;
 }
-.hover_text_container{
-  margin: 0 auto;
-  height: 50rem;
+.navbar-nav li:hover{
+	border: 1px dashed;
+	border-radius: 6px;
+}
+
+/*
+  **the overlay content**
+*/
+.landing{
   position: relative;
-  top: 16em;
-  padding: 5em;
+  margin-top: 20em; 
 }
-.hover_text{
-  margin: 1em auto;
+.site-title-container{
+  font-family: poiretoneregular;
+}
+.site-title{
   color: #fff;
   text-shadow: 1px 1px 1px #2c3e50;
 }
-.hover_text:hover{
+.site-title:hover{
   color: #1abc9c;
 }
-.hover_text_lower{
+.site-description{
   position: relative;
   top: 10px;
   color: #E4F1FE;
   text-shadow: 1px 0px 2px #000;
 }
-.hover_text_lower:hover{
-  color: #16a085;
+.site-description:hover{
+  color: #1abc9c;
 }
-.down{
-  color: #fff;
+
+/**************************************\
+              ***main***
+\**************************************/
+main.container-fluid{
+  margin: 0;
+  padding: 0;
 }
-.portfolio {
+main .row{
+  background-color: #f6f7f8;
+  box-shadow: inset 0 1px 0 0 #eee;
+  padding: 6em;
   margin: 0 auto;
   padding: 4em;
   border-bottom: 1px solid #eee;
 }
-.portfolio .header {
-  margin: 0 auto 0 auto;
-  font-size: 3em;
-}
-.portfolio p {
-  margin: 2em auto;
-}
-.portfolio-footer {
-  background-color: #f6f7f8;
-  box-shadow: inset 0 1px 0 0 #eee;
-  padding: 6em;
-}
-section.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-section.row {
-  margin: 0;
-}
+
+/***************************************\
+            ***footer***
+\***************************************/
 footer {
   padding: 8em;
   margin: 0;

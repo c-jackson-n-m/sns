@@ -33,11 +33,71 @@ header.container-fluid .landing_plane .hover_text {
   margin: 0 auto;
   padding: 2em 8em;
 }
-.contact-data{
-  color: #4a89dc;
+.port_photos figure{
+	padding: 0.5em;
+	margin: 0.5em;
+	box-shadow: 0 0 0.5em 0.01em gray;
 }
-.contact-header{
-  color: #23282e;
+.port_photos figure figcaption{
+	color: green;
+	text-align: center;
+}
+/*resize the figure size according to viewport width*/
+@media only screen and (min-width: 320px){
+	.port_photos figure{
+	}
+}
+@media only screen and (min-width: 480px){
+	.port_photos figure{
+	}
+}
+@media only screen and (min-width: 768px){
+	.port_photos figure{
+	}
+}
+@media only screen and (min-width: 992px){
+}
+@media only screen and (min-width: 1200px){
+}
+#section2 {
+  padding: 2em 8em;
+}
+#section2 .row:first-of-type {
+  padding: 0;
+  color: #2980b9;
+  border-bottom: 2px solid #ecf0f1;
+}
+#section2 .row:first-of-type p{
+  padding: 2px;
+}
+#section2 .row:nth-of-type(2) {
+  color: #3498db;
+}
+#section2 .row{
+  margin: 1em auto;
+}
+#section2 .row article .wrapper {
+  background-color: #ecf0f1;
+  height: 18em;
+}
+#section2 .row article .tile-title {
+  height: 2em;
+  color: #2c3e50;
+}
+#section2 .row article ul {
+  color: #7f8c8d;
+}
+#section3 {
+  padding: 2em 8em;
+  background-color: #ecf0f1;
+}
+#section4 > p:first-of-type {
+  color: #1abc9c;
+}
+#section4 .row .tile {
+  background-color: #ecf0f1;
+  height: 5em;
+  color: #16a085;
 }
 .portfolio-footer {
   background-color: #f6f8f9;
